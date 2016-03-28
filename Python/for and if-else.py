@@ -3,7 +3,7 @@
 
 # In[4]:
 
-a, b = (int(i) for i in input().split())
+a, b = (int(i) for i in input().split()) # does not work in Python2
 print(True if a == b else False)
 print(a == b and True or False) # how does it work?
 
