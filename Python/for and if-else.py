@@ -5,6 +5,7 @@
 
 a, b = (int(i) for i in input().split())
 print(True if a == b else False)
+print(a == b and True or False) # how does it work?
 
 
 # In[5]:
