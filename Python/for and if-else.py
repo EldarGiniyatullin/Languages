@@ -12,11 +12,14 @@ print(a == b and True or False) # how does it work?
 
 genome = 'ATGG'
 # genome[2] = 'S' -- mistake
+# for lists - genome.insert(2, A) == ['A', 'T', 'A', 'G', 'G']
 for i in genome:
     print(i)
 
+# strings are lists too!
 
-# In[ ]:
-
-
-
+guests = ['Ivan', 'Masha', 'Sasha']
+guests += ['Olga']
+guests += 'Olga'
+print(len(guests)) # == 8 (!)
+print(guests) # ['Ivan', 'Masha', 'Sasha', 'Olga', 'O', 'l', 'g', 'a']
